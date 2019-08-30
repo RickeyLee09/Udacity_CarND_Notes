@@ -133,7 +133,7 @@ As mentioned above, the curvature radius function is calculated along with the c
 
 The pixel to meter transformation is determines as `ym_per_pix = 30 / 720` and `xm_per_pix = 3.7 / 830`. These 2 parameters are adopted in calculation. 
 
-To calculate the position of the vehicle, the offset is calculated at line 257. The center pixel of the image is regarded as the center of the vehicle, and the center of 2 lines at bottom is the center of the lane. Thus, the position of the vehicle can be the distance between the 2 centers. 
+To calculate the position of the vehicle, the offset is calculated at line 263. The center pixel of the image is regarded as the center of the vehicle, and the center of 2 lines at bottom is the center of the lane. Thus, the position of the vehicle can be the distance between the 2 centers.
 
 <img src="pipeline_imgs/curvature.jpg" height="180" width="300" alt="Combined Image" />
 
@@ -166,4 +166,7 @@ Here's a [link to my video result](./output_videos/project_video.mp4)
 
  When processing the challenge video, the result can be really bad. If the line is close to the corner of the wall, the perspective transform would take the block into consideratiion and regards it as the lane, this can be misleading to finding the lane lines. 
  Also, when the sunlight is strong, the performance is really bad. It is mainly because there will be many white pixels with high lightness and satuation in the image, and the edges cannot be detected well. 
- It should be noticed that some of the code is hard-coded, like the source points delection. Imagine the situation that the vihicle is offtrack for some reason, then the lane lines would be hard to be found. 
+ It should be noticed that some of the code is hard-coded, like the source points delection. Imagine the situation that the vihicle is offtrack for some reason, then the lane lines would be hard to be found.
+
+ To make this pipeline more robust, I think some machine learning techniques can be considered so that the vehicle would learn
+where the lane lines are itself, and it could fit more situations in reality.

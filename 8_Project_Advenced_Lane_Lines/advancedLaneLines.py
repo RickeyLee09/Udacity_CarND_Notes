@@ -259,8 +259,8 @@ def search_around_poly(binary_warped, left_fit, right_fit):
     left_point = left_fitx[-1]
     right_point = right_fitx[-1]
 
-    offset = (right_point - left_point) * xm_per_pix - 3.7
-
+    # offset = (right_point - left_point) * xm_per_pix - 3.7
+    offset = ((result.shape[1] // 2) - ((right_point + left_point) // 2)) * xm_per_pix
 
     temp = np.copy(result)
     text1 = "Radius of Curvature = " + str(curvature)
@@ -299,8 +299,8 @@ def pipeLine(img):
 
     undistorted = undistort(img, mtx, dist)
 
-    b, g, r = cv2.split(undistorted)
-    undistorted = cv2.merge([r, g, b])
+    # b, g, r = cv2.split(undistorted)
+    # undistorted = cv2.merge([r, g, b])
 
     save_location = 'pipeline_imgs/[1]undistorted.jpg'
     mpimg.imsave(save_location, undistorted)
@@ -321,9 +321,6 @@ def pipeLine(img):
                              [0, img.shape[0]],
                              [0, 0],
                              [img.shape[1], 0]])
-
-    print(src_points)
-    print(des_points)
 
     show_src_points = np.copy(undistorted)
     cv2.line(show_src_points, (src_points[0][0], src_points[0][1]), (src_points[1][0], src_points[1][1]), [255, 0, 0], 5)
@@ -365,8 +362,8 @@ def pipeLine(img):
 
     blend_onto_road = cv2.addWeighted(img, 1., vers_warp, 0.8, 0)
 
-    b, g, r = cv2.split(blend_onto_road)
-    blend_onto_road = cv2.merge([r, g, b])
+    # b, g, r = cv2.split(blend_onto_road)
+    # blend_onto_road = cv2.merge([r, g, b])
     save_location = 'pipeline_imgs/[9]blend_onto_road.jpg'
     mpimg.imsave(save_location, blend_onto_road)
 
@@ -399,6 +396,78 @@ def test_images():
         print("Finish Processing ", this_image)
 
 
+def video_pipeLine(img):
+    # Read camera calibration information
+    dist_pickle = pickle.load(open("camera_cal/wide_dist_pickle.p", "rb"))
+    mtx = dist_pickle["mtx"]
+    dist = dist_pickle["dist"]
+
+    undistorted = undistort(img, mtx, dist)
+
+    # Apply each of the thresholding functions
+    udt = np.copy(undistorted)
+    color_binary, combined_binary = color_gradient(udt, (150, 255), (20, 100))
+
+    # perspective transformation
+    src_points = np.float32([[img.shape[1], img.shape[0] - 10],
+                             [0, img.shape[0] - 10],
+                             [546, 460],
+                             [732, 460]])
+    des_points = np.float32([[img.shape[1], img.shape[0]],
+                             [0, img.shape[0]],
+                             [0, 0],
+                             [img.shape[1], 0]])
+
+    show_src_points = np.copy(undistorted)
+    cv2.line(show_src_points, (src_points[0][0], src_points[0][1]), (src_points[1][0], src_points[1][1]), [255, 0, 0], 5)
+    cv2.line(show_src_points, (src_points[1][0], src_points[1][1]), (src_points[2][0], src_points[2][1]), [255, 0, 0], 5)
+    cv2.line(show_src_points, (src_points[2][0], src_points[2][1]), (src_points[3][0], src_points[3][1]), [255, 0, 0], 5)
+    cv2.line(show_src_points, (src_points[3][0], src_points[3][1]), (src_points[0][0], src_points[0][1]), [255, 0, 0], 5)
+
+    warped = warper(combined_binary, src_points, des_points)
+
+    show_des_points = np.copy(warped)
+    cv2.line(show_des_points, (des_points[0][0], des_points[0][1]), (des_points[1][0], des_points[1][1]), [255, 0, 0], 5)
+    cv2.line(show_des_points, (des_points[1][0], des_points[1][1]), (des_points[2][0], des_points[2][1]), [255, 0, 0], 5)
+    cv2.line(show_des_points, (des_points[2][0], des_points[2][1]), (des_points[3][0], des_points[3][1]), [255, 0, 0], 5)
+    cv2.line(show_des_points, (des_points[3][0], des_points[3][1]), (des_points[0][0], des_points[0][1]), [255, 0, 0], 5)
+
+    out_img, left_fit, right_fit = fit_polynomial(warped)
+
+    result, curvature, offset = search_around_poly(warped, left_fit, right_fit)
+
+    vers_warp = warper(result, des_points, src_points)
+
+    blend_onto_road = cv2.addWeighted(img, 1., vers_warp, 0.8, 0)
+
+    text1 = "Radius of Curvature = " + str(curvature)
+    cv2.putText(blend_onto_road, text1, (150, 80), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (255, 255, 255), 3)
+    text2 = "Vehicle Offset = " + str(abs(offset))
+    cv2.putText(blend_onto_road, text2, (150, 150), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (255, 255, 255), 3)
+
+    # sub windows for debug
+    img1 = cv2.resize(combined_binary, (320, 180), interpolation=cv2.INTER_AREA)
+    img2 = cv2.resize(warped, (320, 180), interpolation=cv2.INTER_AREA)
+    img3 = cv2.resize(out_img, (320, 180), interpolation=cv2.INTER_AREA)
+    img4 = cv2.resize(result, (320, 180), interpolation=cv2.INTER_AREA)
+
+    img1 = cv2.cvtColor(img1, cv2.COLOR_GRAY2BGR)
+    img2 = cv2.cvtColor(img2, cv2.COLOR_GRAY2BGR)
+
+    vis = np.zeros((720+180, 1280, 3))
+
+    # b, g, r = cv2.split(blend_onto_road)
+    # blend_onto_road = cv2.merge([r, g, b])
+
+    vis[:180, :320, :] = img1
+    vis[:180, 320:640, :] = img2
+    vis[:180, 640:960, :] = img3
+    vis[:180, 960:1280, :] = img4
+    vis[180:900, :1280, 0:3] = blend_onto_road / 255
+
+    return vis
+
+
 def test_videos():
     videos = os.listdir("test_videos/")
 
@@ -406,16 +475,10 @@ def test_videos():
         # location = 'test_videos/challenge.mp4'
         # white_output = 'test_videos_output/challenge.mp4'
         location = 'test_videos/' + this_video
-        white_output = 'output_videos/' + this_video
-
-        # To speed up the testing process you may want to try your pipeline on a shorter subclip of the video
-        # To do so add .subclip(start_second,end_second) to the end of the line below
-        # Where start_second and end_second are integer values representing the start and end of the subclip
-        # You may also uncomment the following line for a subclip of the first 5 seconds
-        # clip1 = VideoFileClip("test_videos/solidWhiteRight.mp4").subclip(0,5)
+        white_output = 'output_videos/debug_' + this_video
 
         clip1 = VideoFileClip(location)
-        white_clip = clip1.fl_image(pipeLine)  # NOTE: this function expects color images!!
+        white_clip = clip1.fl_image(video_pipeLine)  # NOTE: this function expects color images!!
         white_clip.write_videofile(white_output, audio=False)
 
         print("Finish Processing ", this_video)
@@ -424,17 +487,10 @@ def test_videos():
 def test_single_image():
     img = cv2.imread('test_images/test1.jpg')
 
-    output_img = pipeLine(img)
+    output_img = video_pipeLine(img)
 
-    # Plot to see results
-    f, (ax1, ax2) = plt.subplots(1, 2, figsize=(24, 9))
-    f.tight_layout()
-    ax1.imshow(img)
-    ax1.set_title('Original Image', fontsize=20)
-    ax2.imshow(output_img)
-    ax2.set_title('Undistorted Image', fontsize=20)
-    plt.subplots_adjust(left=0., right=1, top=0.9, bottom=0.)
-    plt.show()
+    save_location = 'temp.jpg'
+    mpimg.imsave(save_location, output_img)
 
 
 def test_camera_cal():
@@ -453,4 +509,4 @@ def test_camera_cal():
 
 
 if __name__ == "__main__":
-    test_single_image()
+    test_videos()

@@ -2,9 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad88ee61-3f40-4c88-8997-f5e2c7d5e053" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/challenge_video.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/harder_challenge_video.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/project_video.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_videos/challenge_video.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_videos/harder_challenge_video.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/test_videos/challenge_video.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/test_videos/harder_challenge_video.mp4" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/straight_lines1.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/straight_lines1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/straight_lines2.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/straight_lines2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/test1.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/test1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/test2.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/test2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/test3.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/test3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/test4.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/test4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/test5.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/test5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/test6.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_images/test6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_videos/project_video.mp4" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/output_videos/project_video.mp4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[1]undistorted.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[1]undistorted.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[2]combined_binary.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[2]combined_binary.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[3]show_src_pts.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[3]show_src_pts.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[4]warped.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[4]warped.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[5]show_des_pts.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[5]show_des_pts.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[6]find_lane_pixels.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[6]find_lane_pixels.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[7]find_lane.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[7]find_lane.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[8]vers_warp.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[8]vers_warp.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[9]blend_onto_road.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/[9]blend_onto_road.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/curvature.jpg" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/pipeline_imgs/curvature.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/README.md" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/advancedLaneLines.py" afterPath="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/advancedLaneLines.py" />
@@ -19,11 +39,12 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Self_Driving$8_slidinig_window.coverage" NAME="8_slidinig_window Coverage Results" MODIFIED="1566787364921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/7_gradients_and_color_spaces" />
-    <SUITE FILE_PATH="coverage/Self_Driving$advancedLaneLines.coverage" NAME="advancedLaneLines Coverage Results" MODIFIED="1567062895492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines" />
+    <SUITE FILE_PATH="coverage/Self_Driving$advancedLaneLines.coverage" NAME="advancedLaneLines Coverage Results" MODIFIED="1567139569431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines" />
     <SUITE FILE_PATH="coverage/Self_Driving$5_rgb_to_hls.coverage" NAME="5_rgb_to_hls Coverage Results" MODIFIED="1566382762789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/7_gradients_and_color_spaces" />
     <SUITE FILE_PATH="coverage/Self_Driving$mag_dir.coverage" NAME="mag_dir Coverage Results" MODIFIED="1566378508431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gradients_and_color_spaces" />
     <SUITE FILE_PATH="coverage/Self_Driving$Canny.coverage" NAME="Canny Coverage Results" MODIFIED="1565854678651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Self_Driving$camera_cal.coverage" NAME="camera_cal Coverage Results" MODIFIED="1566802806688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines" />
+    <SUITE FILE_PATH="coverage/Self_Driving$adjust_threshold.coverage" NAME="adjust_threshold Coverage Results" MODIFIED="1567137394705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines" />
     <SUITE FILE_PATH="coverage/Self_Driving$undistortAndTransform.coverage" NAME="undistortAndTransform Coverage Results" MODIFIED="1566372882092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/camera_calibration" />
     <SUITE FILE_PATH="coverage/Self_Driving$7_lane_histogram.coverage" NAME="7_lane_histogram Coverage Results" MODIFIED="1566528776147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/7_gradients_and_color_spaces" />
     <SUITE FILE_PATH="coverage/Self_Driving$camera_calibration.coverage" NAME="camera_calibration Coverage Results" MODIFIED="1566208456822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/camera_calibration" />
@@ -45,49 +66,12 @@
       <file leaf-file-name="advancedLaneLines.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/advancedLaneLines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4545">
-              <caret line="303" column="0" lean-forward="true" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
+            <state relative-caret-position="361">
+              <caret line="491" column="30" lean-forward="true" selection-start-line="491" selection-start-column="30" selection-end-line="491" selection-end-column="30" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="writeup_template.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/writeup_template.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="612">
-                <caret line="169" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="150">
-                <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="example_output.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/examples/example_output.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -126,9 +110,10 @@
         <option value="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/camera_cal.py" />
         <option value="$PROJECT_DIR$/7_gradients_and_color_spaces/9_prev_poly.py" />
         <option value="$PROJECT_DIR$/5_Project_Finding_Lane_Lines/lane_detection.py" />
-        <option value="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/advancedLaneLines.py" />
         <option value="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/writeup_template.md" />
         <option value="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/README.md" />
+        <option value="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/adjust_threshold.py" />
+        <option value="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/advancedLaneLines.py" />
       </list>
     </option>
   </component>
@@ -139,10 +124,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
+    <option name="x" value="59" />
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="width" value="1380" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -159,7 +144,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -203,150 +188,14 @@
               <option name="myItemId" value="Self_Driving" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8_Project_Advenced_Lane_Lines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test_images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8_Project_Advenced_Lane_Lines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pipeline_imgs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8_Project_Advenced_Lane_Lines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output_videos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8_Project_Advenced_Lane_Lines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output_images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8_Project_Advenced_Lane_Lines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8_Project_Advenced_Lane_Lines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camera_cal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7_gradients_and_color_spaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6_camera_calibration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Self_Driving" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -360,24 +209,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.advancedLaneLines">
-    <configuration default="false" name="8_slidinig_window" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/7_gradients_and_color_spaces" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Self_Driving" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/7_gradients_and_color_spaces/8_slidinig_window.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="9_prev_poly" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -446,6 +277,24 @@
       <module name="Self_Driving" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/camera_cal.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="adjust_threshold" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Self_Driving" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/adjust_threshold.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -676,19 +525,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.8_slidinig_window" />
-      <item index="1" class="java.lang.String" itemvalue="Python.9_prev_poly" />
-      <item index="2" class="java.lang.String" itemvalue="Python.10_radius_curve" />
-      <item index="3" class="java.lang.String" itemvalue="Python.advancedLaneLines" />
-      <item index="4" class="java.lang.String" itemvalue="Python.camera_cal" />
+      <item index="0" class="java.lang.String" itemvalue="Python.9_prev_poly" />
+      <item index="1" class="java.lang.String" itemvalue="Python.10_radius_curve" />
+      <item index="2" class="java.lang.String" itemvalue="Python.advancedLaneLines" />
+      <item index="3" class="java.lang.String" itemvalue="Python.camera_cal" />
+      <item index="4" class="java.lang.String" itemvalue="Python.adjust_threshold" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.advancedLaneLines" />
-        <item index="1" class="java.lang.String" itemvalue="Python.9_prev_poly" />
-        <item index="2" class="java.lang.String" itemvalue="Python.camera_cal" />
-        <item index="3" class="java.lang.String" itemvalue="Python.10_radius_curve" />
-        <item index="4" class="java.lang.String" itemvalue="Python.8_slidinig_window" />
+        <item index="1" class="java.lang.String" itemvalue="Python.adjust_threshold" />
+        <item index="2" class="java.lang.String" itemvalue="Python.9_prev_poly" />
+        <item index="3" class="java.lang.String" itemvalue="Python.camera_cal" />
+        <item index="4" class="java.lang.String" itemvalue="Python.10_radius_curve" />
       </list>
     </recent_temporary>
   </component>
@@ -706,17 +555,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="23" width="1920" height="1057" extended-state="1" />
+    <frame x="59" y="23" width="1380" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15921193" sideWeight="0.6551724" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22720478" sideWeight="0.64169383" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27875647" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15921193" sideWeight="0.3448276" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2178344" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22720478" sideWeight="0.3583062" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -740,32 +589,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/advancedLaneLines.py</url>
-          <line>266</line>
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/7_gradients_and_color_spaces/9_prev_poly.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/7_gradients_and_color_spaces/10_radius_curve.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,9 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -841,9 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
           <caret line="66" column="51" lean-forward="false" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -851,7 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -864,7 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -872,9 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -882,7 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
           <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -890,7 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
           <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="72" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,9 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -908,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,9 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -934,7 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-375">
           <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -942,7 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="124" column="19" lean-forward="true" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,7 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,7 +815,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="480">
             <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="88" />
-            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1020,24 +827,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/writeup_template.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="612">
-            <caret line="169" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <first_editor relative-caret-position="93">
+            <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor>
@@ -1046,10 +840,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/writeup_template.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="33">
+            <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/adjust_threshold.py" />
     <entry file="file://$PROJECT_DIR$/8_Project_Advenced_Lane_Lines/advancedLaneLines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4545">
-          <caret line="303" column="0" lean-forward="true" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
+        <state relative-caret-position="361">
+          <caret line="491" column="30" lean-forward="true" selection-start-line="491" selection-start-column="30" selection-end-line="491" selection-end-column="30" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
